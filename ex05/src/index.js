@@ -1,18 +1,36 @@
 // Only change code below this line
-
+let arrKey = [];
+let arrValue = [];
 let  shoppingList = new Map([
 
-       ["Banana", 1],
-       ["Pineapple", 2],
-       ["Pear", 3],
-       ["Carrot", 5],
-       ["Apple", 7],
+    
+       ["Banana", 3],
+       ["Pineapple", 5],
+       ["Pear", 2],
+       ["Carrot", 10],
+       ["Apple", 1.5],
+    
 ])
-for (let value of shoppingList.entries()) {
+for (let col of shoppingList.keys()) {
 
-    let arrKey = value[0];
-    console.log(arrKey)
-   // console.log(`${value[0]}: ${value[1]}`);
+
+    let arrKey = [];
+    arrKey.push(col);
+    console.log(`groceries: ${arrKey}`);
+
+}
+for (let col of shoppingList.values()) {
+
+
+    let arrValue = [];
+    arrValue.push(col);
+    console.log(`amount: ${arrValue}`);
+
+}
+for (let col of shoppingList.entries()) {
+
+
+    console.log(`[ '${col[0]}', ${col[1]} ]`);
 
 }
 

@@ -3,12 +3,13 @@ let myArr = [];
 
 function* multiplication(x){
 
-    for(let i = 0; i < x.length; i++){
+    for(let i = 1; i < x; i++){
+         
         
-          x *= 2;
-         yield x;
-         yield i + x;
+          x *= 2 
 
+    
+        yield x;
        
         myArr.push(x);
     }
@@ -18,12 +19,13 @@ function* multiplication(x){
 
 var num = multiplication(3);
 
-for(let i = 0; i <3 ; i++){
+for(let i = 0; i <4 ; i++){
 
-    let iter = num.next().value;
-    console.log(iter)
+    let iter = num.next();
+    
+    
     
 }
-
+console.log(myArr);
 // Only change code above this line
 module.exports = multiplication;

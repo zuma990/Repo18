@@ -1,0 +1,14 @@
+body {
+
+    background-image: url(../img/gigi-logo.png);
+    background-attachment: fixed;
+}
+span {
+     
+    color: #e1591e;
+}
+.current {
+
+    display: inline;
+    float: right;
+}
